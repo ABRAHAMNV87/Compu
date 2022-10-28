@@ -1,0 +1,79 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage[x11names]{xcolor}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\thepage}
+\rhead{Abraham Nava Villavicencio}
+\lhead{\leftmark}
+\begin{document}
+\begin{center}
+\huge{\textbf{Acordeón}}\\
+\Large{Computación - 8180\\
+27 de Octubre de 2022}
+\end{center}
+
+\section{Mecánica}
+\begin{enumerate}\small
+    \item[*] \textcolor{red}{{$|\vec{A}|=\sqrt{A_{x}^{2}+A_{y}^{2}+A_{z}^{2}}$}} La norma de un vector es una medida de la magnitud o tamaño de este y su resultado es expresado en una cantidad escalar junto con su vector unitario de la siguiente forma $(ax\hat{i},ay\hat{j},az\hat{k}).$
+    \item[*] {$\vec{v}=\frac{x_{f}-x_{0}}{t_{f}-t_{0}}$} La velocidad promedio se define como la razón del desplazamiento de un cuerpo con respecto al intevalo de tiempo en que realiza dicho desplazamiento.
+    \item[*] {$x=x_{0}+v_{0}t+\frac{1}{2}\vec{a}t^{2}$} La posición de un cuerpo en MRUA es determinado por esta formula, tomando en cuenta la velocidad y posición inicial, así como la aceleración que es constante y el tiempo que tiene para acelerar dicho objeto.
+    \item[*] {$h=v_{0}t+\frac{1}{2}\vec{g}t^{2}$} Esta formula de caida libre sirve para calcular la altura desde la que un objeto inicia su desplazamiento hacia el suelo o el punto final de su desplazamiento usando $\vec{g}$ como constante pues es la fuerza de atraccion que ejerce la tierra sobre los cuerpos.
+    \item[*] {$\vec{v}_{f}=\sqrt{v_{0}^{2}+2\vec{g}h}$} Esta formula de caida libre sirve para calcular la velocidad final que tiene un cuerpo instantes antes de llegar al final de su desplazamiento tomando en cuenta $\vec{g}$ como constante y h como una cantidad escalar definida.
+
+\end{enumerate}
+\section{Mecánica de Fluidos}
+\begin{enumerate}
+    \item [°] {$\rho=\frac{m}{V}$} La densidad es calculada con esta formula donde la masa y el volumen son definidos y sus unidades son $\frac{kg}{m^{3}}$
+    \item [°] {$\gamma=\frac{W}{V}=\frac{m\vec{g}}{V}=\rho\vec{g}$} Se llama peso específico a la relación entre el peso de una sustancia y su volumen y su inidad de medida es $\frac{\vec{N}}{m^{3}}$
+    \item [°] {$P=\frac{\vec{F}}{A}$} La presión mide el reparto de una fuerza sobre una superficie. Se define como la fuerza aplicada perpendicularmente sobre cada unidad de superficie, es una magnitud escalar cuantificada en Pascales
+    \item [°] {$P=\frac{\vec{F_{1}}}{A_{1}}=\frac{\vec{F_{2}}}{A_{2}}$} La ley de Pascal estipula que la presión ejercida sobre un fluido incompresible y en equilibrio dentro de un recipiente de paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del fluido.
+    \item[°] \textcolor{red}{{$\vec{E}=\rho V\vec{g}$}} El principio de Arquimides afirma que, «Un cuerpo total o parcialmente sumergido en un fluido en reposo experimenta un empuje vertical hacia arriba igual al peso del fluido desalojado» donde si $\vec{W}>\vec{E}$ entonces el cuerpo de hunde en el fluido hasta «el fondo» de donde este contenido elfluido, si $\vec{W}>\vec{E}$ entonces el cuerpo flota parcial o completamente sobre el fluido y si $\vec{W}=\vec{E}$ el cuerpo se haya totalmente sumergido pero no se hunde hasta «el fondo» de donde este contenido el fluido.
+    
+\end{enumerate}
+
+\section{Ondas}
+\begin{enumerate}
+    \item [$\neg$] {$T=\frac{1}{f}, f=\frac{1}{T}$} Periodo(T) es eltiempo en el que una partícula realiza una vibración (oscilación) completa. Se mide en segundos(s). Frecuencia(f): es el número de oscilaciones de la partícula vibrante por segundo. Se mide en Herzios(Hz).
+    \item [$\neg$] {$\vec{F}_{x}=k(x-x_{0})$} La ley de Hooke establece que el alargamiento de un muelle es directamente proporcional al módulo de la fuerza que se le aplique, siempre y cuando no se deforme permanentemente dicho muelle y su coeficiente elastico sea constante.
+    \item [$\neg$] {$E_{m}=\frac{1}{2}mv_{x}^{2}+\frac{1}{2}kx^{2}=\frac{1}{2}kA^{2}$} La mecanica de una onda es proporcional al cuadrado de su amplitud por un medio del coeficiente de elasticidad.
+    \item [$\neg$] {$w=2\pi f$} La frecuencia angular se refiere al desplazamiento angular por unidad de tiempo o la tasa de cambio de la fase de una forma de onda sinusoidal, o como la tasa de cambio del argumento de la función seno.
+    \item [$\neg$] \textcolor{red}{{$f_{L}=\frac{v+v_{L}}{v+v_{s}}f_{s}$}} El efecto doppler, es el cambio de frecuencia aparente de una onda producido por el movimiento relativo de la fuente respecto a su observador
+
+    
+\end{enumerate}
+
+\section{Termodinámica}
+\begin{enumerate}
+    \item [\propto] {°F=1.8°C+32°} Formula para la equvalencia de grados Farenheit a grados Celsius.
+    
+    \item [\propto] {C= $\frac{F-32}{1.8}$} Formula para la equvalencia de grados Celsius grados Farenheit.
+
+    \item[\propto] \textcolor{red}{{K=°C+273.15°}} Formula para la equivalencia de grados Celcius a su escala absoluta Kelvin
+
+    \item[\propto] {°Ra=°F-+459.67°}  Formula para la equivalencia de grados Farenheit a una escala absoluta Rankine
+
+    \item[\propto]{°Re= $\frac{C}{1.25}$}  Formula para la equvalencia de grados Celsius a grados Réaumur escala de temperatura que tomaba un valor de 0° Réaumur corresponde al punto de congelación del agua y 80°.
+    
+    \end{enumerate}
+
+\section{Electromagnetismo}
+\begin{enumerate}
+    \item [\diamond] \textcolor{red}{$\vec{F}=\frac{k|q_{1}q_{1}|}{r^{2}}$} La ley de Coulumb relaciona la magnitud de cada una de las fuerzas eléctricas con las que interactúan dos cargas puntuales en reposo es directamente proporcional al producto de la magnitud de ambas cargas e inversamente proporcional al cuadrado de la distancia que las separa y tiene la dirección de la línea que las une. La fuerza es de repulsión si las cargas son de igual signo, y de atracción si son de signo contrario.
+    
+    \item [\diamond] $\vec{E}=\frac{\vec{F_{e}}}{q}$ Un campo eléctrico es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas, el flujo decrece con la distancia a la fuente que provoca el campo.
+
+    \item [\diamond] $V=IR$ La ley de Ohm se usa para determinar la relación entre tensión, corriente y resistencia en un circuito eléctrico.
+
+    \item [\diamond] $\vec{Q}=I^{2}t$ El efecto Joule es un fenómeno por el que los electrones en movimiento de una corriente eléctrica impactan contra el material a través del cual están siendo conducidos. La energía cinética que tienen los electrones se convierte entonces en energía térmica, calentando el material por el que circulan.
+
+    \item [\diamond] $\Phi=\vec{E}Acos\theta=\frac{q}{\epsilon_{0}}$ El flujo del campo eléctrico a través de cualquier superficie cerrada es igual a la carga q contenida dentro de la superficie, dividida por la constante $\epsilon_{0}$.
+    
+\end{enumerate}
+
+
+
+\end{document}

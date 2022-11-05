@@ -1,0 +1,111 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\thepage}
+\rhead{Abraham Nava Villavicencio}
+\lhead{\leftmark}
+
+
+
+\begin{document}
+
+\begin{center}
+\huge{\textbf{Problemas Físicos}}\\
+\Large{Computación - 8180\\
+4 de Noviembre de 2022}
+\end{center}
+
+
+\section{Problemas}
+1. Considerando un sistema en una dimensión y sabiendo que $\vec{a}=\frac{dv}{dt}$ y $\vec{v}=\frac{dx}{dt}$. Demuestre que la posición se puede ver como: $x=x(t)=x_{0}+v_{0}t+\frac{1}{2}at^{2}$
+   $ \vec{a}=\frac{\triangle \vec{v}}{\triangle t}= \frac{\vec{v}_{f}-\vec{v}_{0}}{t_{f}-t_{0}}\Rightarrow \vec{a}= \lim\limits_{t \rightarrow 0}\frac{\triangle \vec{v}}{\triangle t}=\frac{d\vec{v}}{df} \Rightarrow \vec{a}=\frac{d}{dt}(\frac{dx}{dt})=\frac{d^{2}x}{dt^{2}}\\
+   \Rightarrow \frac{d\vec{v}}{dt}=a_{0}\rightarrow dv=a_{0}dt \Rightarrow \int \frac{d\vec{v}}{dt}=\int a_{0}dt \Rightarrow \vec{V}(t)=a_{0}t+c_{0}\\
+   \Rightarrow \frac{dx}{dt}=a_{0}t+v_{0} \Rightarrow \int dx=\int a_{0}+dt+\int v_{0}dt\\ \Rightarrow x(t)=\frac{1}{2}a_{0}t^{2}+v_{0}+c \Rightarrow x(t=0)=c_{1}=x_{0}\\
+   x(t)=x_{0}+v_{0}t+\frac{1}{2}a_{0}t^{2}$\\
+2.Considere una carrera entre dos coches, éstos arrancan del reposo pero el coche uno hace trampa (cosa que nunca pasa), saliendo un segundo antes que el segundo, si los autos tienen una aceleración de $3.5\frac{m}{s^{2}}$ y $4.9\frac{m}{s^{2}}$ respectivamente.
+\begin{enumerate}
+    \item[a)] ¿En qué momento el auto dos alcanza al auto uno?, $i.e.$ t=?\\
+    $\frac{7+\sqrt{35}}{2}s$
+    \item[b)] ¿Cúal será la posición cuando el inciso (a) ocurra?,$x=?$\\
+    x=72.98598867m
+    \item[c)] ¿Cúal será la velocidad que tendrán en ese punto ambos autos?\\
+    $\vec{v}_{c1}=22.60313962$, $ \vec{v_{c2}}=26.74439547$
+    \item[d)] Toma 5 tiempos diferentes a partir de que los autos arrancan, sin tomar el tiempo inicial, 3 antes del tiempo dode los autos se encuentran y dos posteriores a ese tiempo, realicen dos tablas, una para cada auto, con la siguiente información; aceleración, tiempo, posición y velocidad.
+\end{enumerate}
+
+\begin{table}
+ \caption{Tabla 1: cinematica del coche 1}
+    \label{Tabla.1}
+    \centering
+\begin{tabular}{|c|c|c|c|} 
+\hline
+\multicolumn{4}{|c|}{Auto 1}                                                          \\ 
+\hline
+No dependiente del tiempo            & \multicolumn{3}{|l|}{Dependientes del tiempo}  \\ 
+\hline
+a[m/s\^\{2\}]                         & t[s] & x[m]  & v[m/s]                         \\ 
+\hline
+\multirow{7}{*}{Valor de aceleracion} & 1    & 1.75  & 3.5                            \\ 
+
+\cline{2-4}
+                                      & 4    & 28    & 14                             \\ 
+\cline{2-4}
+                                      & 5    & 43.75 & 17.5                           \\ 
+\cline{2-4}
+                                      & 7    & 85.75 & 24.5                           \\ 
+\cline{2-4}
+                                      & 8    & 112   & 28                             \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Tabla 1: cinematica del coche 1}
+    \label{Tabla.1}
+\centering
+\begin{tabular}{|c|c|c|c|} 
+\hline
+\multicolumn{4}{|c|}{Auto 2}                                                          \\ 
+\hline
+No dependiente del tiempo             & \multicolumn{3}{l|}{Dependientes del tiempo}  \\ 
+\hline
+a[m/s\^\{2\}]                         & t[s] & x[m]  & v[m/s]                         \\ 
+\hline
+\multirow{7}{*}{Valor de aceleracion} & 1    & 2.45  & 4.9                            \\ 
+        
+\cline{2-4}
+                                      & 4    & 39.2    & 19.6                             \\ 
+\cline{2-4}
+                                      & 5    & 61.25 & 14.5                           \\ 
+\cline{2-4}
+                                      & 7    & 120.05 & 34.3                           \\ 
+\cline{2-4}
+                                      & 8    & 156.8   & 39.2                             \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+3. Considere el siguiente sistema, dos bloques de masas $m_{1}$ y $m_{2}$ estan unidos por una cuerda ideal y descansan sobre una superficie horizontal sin roce. Si una fuerza de magnitud A se le aplica al bloque de masa $m_{2}$ horizontalmente de la dirección que muestra la figura 1. Realicen los respectivos diagramas de cuerpos libres y anéxenlo como una imágen, a partir de ellos determinen la aceleración del sistema y la tensión de la cuerda entre los bloques.  
+
+\\
+Una cuerda ideal en Mecánica es aquélla sin masa y sin propiedades elásticas (de longitud fija) aunque puede deformarse (cambiar de forma). Las cuerdas con masa no permiten que la tensión se transmita salvo que el movimiento sea transversal a la cuerda y pequeño
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm,height=10cm ]{Imagenes/Diagrama.jpg}
+    \caption{Sistema de masas}
+    \label{Diagrama}
+\end{figure}
+\newpage
+\section{Extras}
+La paqueteria hyperref sirve para adjuntar en tus documento un hipervinculo o link para acceder al sitio web de elección en caso de ser necesario
+Fuente 
+\href{http://www.overleaf.com}{Paqueteria hyperref}
+\end{document}
